@@ -1,0 +1,9 @@
+services:
+    jalali_date_time:
+        class: Borsaco\JalaliDateTimeBundle\Service\JalaliDateTime
+        public: true
+
+    twig.jalali_date:
+            class: Borsaco\JalaliDateTimeBundle\Twig\AppExtension
+            tags:
+                - { name: twig.extension }

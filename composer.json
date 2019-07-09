@@ -1,0 +1,25 @@
+{
+  "name": "borsaco/jalali-date-time-bundle",
+  "type": "symfony-bundle",
+  "description": " A bundle to using jalali date time in Symfony applications ",
+  "keywords": ["data", "jalali", "php", "symfony", "symfony2", "symfony3"],
+  "homepage": "http://borsaco.ir",
+  "version": "1.0.0",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alireza Seddighi",
+      "email": "seddighi@borsaco.ir",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "symfony/framework-bundle": ">=2.2",
+    "borsaco/jalali-date-time": "^2.0.0"
+  },
+  "autoload": {
+    "psr-4": { "Borsaco\\JalaliDateTimeBundle\\": "" }
+  }
+}
