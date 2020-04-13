@@ -17,7 +17,7 @@
   ],
   "require": {
     "symfony/framework-bundle": ">=2.2",
-    "borsaco/jalali-date-time": "^2.0.0"
+    "borsaco/jalali-date-time": "^1.0.0"
   },
   "autoload": {
     "psr-4": { "Borsaco\\JalaliDateTimeBundle\\": "" }
