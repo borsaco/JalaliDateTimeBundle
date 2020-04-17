@@ -3,8 +3,10 @@
 namespace Borsaco\JalaliDateTimeBundle\Twig;
 
 use Borsaco\jalaliDateTime\JDateTime;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
 
-class AppExtension extends \Twig_Extension
+class AppExtension extends AbstractExtension
 {
 	const DEFAULT_INTERVAL_FORMAT = '%d روز';
 	const DEFAULT_DATE_FORMAT = 'l, d M Y H:i:s O';
@@ -19,7 +21,7 @@ class AppExtension extends \Twig_Extension
 	public function getFilters()
 	{
 		return array(
-			new \Twig_SimpleFilter( 'jalali_date', array( $this, 'jalaliDateFilter' ) ),
+			new TwigFilter( 'jalali_date', array( $this, 'jalaliDateFilter' ) ),
 		);
 	}
 
